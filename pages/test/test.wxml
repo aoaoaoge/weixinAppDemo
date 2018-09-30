@@ -1,0 +1,15 @@
+<view>
+  <view class='title'>
+    <text class='tcol'>信息</text>
+    <text class='tcol'>信息</text>
+    <text class='tcol'>信息</text>
+    <text class='tcol'>信息</text>
+  </view>
+  <scroll-view scroll-y="true" class="contener">
+    <view>
+      <block wx:for="{{list}}" wx:for-item="l">
+        <text class='col'>{{l}}</text>
+      </block>
+    </view>
+  </scroll-view>
+</view>

@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    motto: '登录成功',
+    motto: '来了啊',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -13,6 +13,11 @@ Page({
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
+    })
+  },
+  comein: function () {
+    wx.navigateTo({
+      url: '../test/test'
     })
   },
   onLoad: function () {

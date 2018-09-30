@@ -1,0 +1,37 @@
+.title{
+  margin: 0 auto;
+  border:1px #ccc ridge;
+  border-bottom: 1px #ccc ridge;
+  height: 20px;
+  border-left: none;
+  border-right: none;
+}
+.tcol{
+  float: left;
+  font-size: 12px;
+  font-weight: 600px;
+  color: #000;
+  border-right: 1px #ccc ridge;
+  width: 24.5%;
+  text-align: center;
+  height: 20px
+}
+.tcol:last-child{
+  border-right: none
+}
+.contener{
+  margin-top: 5px;
+  border-bottom: 1px #ccc ridge;
+  border-right: 1px #ccc ridge;
+  border-top: 1px #ccc ridge;
+  font-size: 12px;
+  color: #333;
+}
+.col{
+  float: left;
+  font-size: 12px;
+  border-right: 1px #ccc ridge;
+  width: 24.7%;
+  text-align: center;
+  height: 20px
+}
