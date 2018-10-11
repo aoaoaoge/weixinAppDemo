@@ -17,7 +17,7 @@ Page({
   },
   comein: function () {
     wx.navigateTo({
-      url: '../test/test'
+      url: '../booklist/booklist'
     })
   },
   onLoad: function () {

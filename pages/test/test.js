@@ -24,5 +24,19 @@ Page({
           }
         }
       });
+  },
+  nowGotUserInfo: function(e){
+    console.log(e.detail.errMsg);
+    console.log(e.detail.userInfo);
+    console.log(e.detail.rawData);
+    wx.request({
+      url: 'http://localhost:8088/user/addUserInfo',
+      method: "POST",
+      header: { "content-type":"application/json"},
+      data: e.detail.userInfo,
+      success: function (res) {
+        console.log(res.data.message);
+      }
+    })
   }
 })

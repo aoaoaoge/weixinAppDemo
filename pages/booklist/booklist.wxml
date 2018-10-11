@@ -1,0 +1,37 @@
+<!--pages/booklist/booklist.wxml-->
+<view>
+  <view class='title'>
+    <text class='tcol'>书名</text>
+    <text class='tcol'>作者</text>
+    <text class='tcol'>价格</text>
+    <text class='tcol'>操作</text>
+  </view>
+  <scroll-view scroll-y="true" class="contener">
+    <block wx:for="{{list}}" wx:for-item="book">
+      <view>
+        <text class='id' style='display:none'>{{book.id}}</text>
+        <text class='col'>{{book.name}}</text>
+        <text class='col'>{{book.author}}</text>
+        <text class='col'>{{book.price}}</text>
+        <text class='buy' catchtap='addBuyCar' data-book='{{book}}'>购买</text>
+      </view>
+    </block>
+  </scroll-view>
+  <view class="buycen {{buycen?'show':'hide'}}">
+    <view>
+      <view class='bookinfo'>
+        <text class='id' style='display:none'>{{book.id}}</text>
+        <text class='bookname'>书名：{{book.name}}</text>
+        <text class='bookprice'>单价：{{book.price}}</text>
+      </view>
+      <view class='count'>
+        <text class='add' catchtap='addbook'>+</text>
+        <input type='text' class='number' maxlength='3' value='1'/>
+        <text class='sub'>-</text>
+      </view>
+      <text class='totel'>{{book.totel}}元</text>
+    </view>
+    <button size='mini' type='primary'>加入购物车</button>
+    <button size='mini' type='primary' catchtap='cancelbuy'>取 消</button>
+  </view>
+</view>

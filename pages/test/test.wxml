@@ -12,4 +12,7 @@
       </block>
     </view>
   </scroll-view>
+  <view>
+    <button type='primary' open-type='getUserInfo'lang="zh_CN" bindgetuserinfo="nowGotUserInfo">获取用户信息</button>
+  </view>
 </view>
